@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Dorm Dash</title>
+<meta name="description" content="Contact Dorm Dash, track an order or schedule a free return pickup.">
+<meta name="theme-color" content="#0F5A39">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%2318794E'/%3E%3Cpath d='M5 8h11M8 12h11M5 16h8' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body data-page="contact">
+
+<div class="util">
+  <div class="wrap">
+    <span class="promo">Free delivery on orders $35+ · Dash delivery in under an hour</span>
+    <span><label for="hall">Deliver to:</label> <select id="hall"></select></span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap head">
+    <a class="logo" href="index.html" aria-label="Dorm Dash home">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 8h11M8 12h11M5 16h8"/></svg></span>
+      <b>Dorm Dash</b>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main"><a href="products.html">Shop</a><a href="how-it-works.html">How It Works</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html" aria-current="page">Contact</a></nav>
+    <form class="search" id="searchForm" role="search">
+      <label for="q" class="sr">Search products</label>
+      <input id="q" type="search" placeholder="What can we help you find?" autocomplete="off">
+      <button aria-label="Search"><svg class="icon" style="width:18px;height:18px" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    </form>
+    <button class="acct" id="acct"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span id="acctLabel">Sign in</span></button>
+    <button class="cart-btn" id="openCart" aria-label="Open cart"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg><span class="count num" id="cartCount">0</span></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="phero">
+  <div class="crumb"><a href="index.html">Home</a> / Contact</div>
+  <h1>Contact us</h1>
+  <p class="lede">Questions about an order, a missing item or a hall we don't serve yet? We reply within an hour while runners are out.</p>
+</section>
+
+<section class="sec">
+  <div class="split">
+    <form class="form panel demo" novalidate data-ok="Message sent. We'll reply to your email within an hour.">
+      <h2 style="font-size:20px">Send a message</h2>
+      <div class="row2">
+        <div class="field"><label for="cName">Name</label><input id="cName" required autocomplete="name"></div>
+        <div class="field"><label for="cEmail">Email</label><input id="cEmail" type="email" required autocomplete="email"></div>
+      </div>
+      <div class="field"><label for="cOrder">Order number (optional)</label><input id="cOrder" placeholder="DD-41234"></div>
+      <div class="field"><label for="cTopic">Topic</label><select id="cTopic"><option>An order I placed</option><option>Returns</option><option>Delivery to my hall</option><option>Product question</option><option>Something else</option></select></div>
+      <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" required placeholder="How can we help?"></textarea></div>
+      <div><button class="pill green">Send message</button></div>
+      <div class="ok" role="status" hidden></div>
+    </form>
+    <div class="stack">
+      <div class="info"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><div><b>Text us</b><span class="big num">(478) 555-0142</span><span>Fastest way to reach us about an order on its way.</span></div></div>
+      <div class="info"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><b>Email</b><span class="big">help@dormdash.com</span></div></div>
+      <div class="info"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><div><b>Hours</b><span>8am to 1am, seven days a week</span></div></div>
+      <div class="info"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg><div><b>Quick answers</b><span>Delivery times, returns and payment are covered in the <a href="faq.html" style="color:var(--green);font-weight:600">FAQ</a>.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="track">
+  <div class="sec-head"><div><h2>Track an order</h2><p>Enter the order number from your confirmation. It starts with DD-.</p></div></div>
+  <form class="inline" id="trackForm" novalidate style="max-width:560px">
+    <label for="trackNo" class="sr">Order number</label>
+    <input id="trackNo" placeholder="DD-41234">
+    <button class="pill green">Track</button>
+  </form>
+  <div id="trackResult" role="status" style="max-width:720px"></div>
+  <h3 style="font-size:17px;margin:22px 0 0">Your recent orders</h3>
+  <div id="recentOrders" style="max-width:720px"></div>
+</section>
+
+<section class="sec" id="return-pickup">
+  <div class="split">
+    <div class="prose">
+      <h2 style="font-size:24px">Schedule a return pickup</h2>
+      <p>Unopened items can be returned within 30 days. Leave the item at your door during your pickup window and a runner collects it.</p>
+      <ul>
+        <li>Refunds arrive 3–5 business days after pickup.</li>
+        <li>Damaged or wrong items are replaced free, opened or not.</li>
+        <li>Opened bedding, towels and shower shoes can't be returned unless damaged.</li>
+      </ul>
+    </div>
+    <form class="form panel demo" novalidate data-ok="Pickup scheduled. Leave the item at your door and we'll text you when the runner has it.">
+      <div class="field"><label for="retNo">Order number</label><input id="retNo" placeholder="DD-41234" required></div>
+      <div class="field"><label for="retWhy">Reason</label><select id="retWhy"><option>Changed my mind</option><option>Wrong size or fit</option><option>Arrived damaged</option><option>Wrong item sent</option></select></div>
+      <div class="field"><label for="retWhen">Pickup window</label><select id="retWhen"><option>Today, 4–6pm</option><option>Today, 8–10pm</option><option>Tomorrow, 10am–12pm</option><option>Tomorrow, 2–4pm</option></select></div>
+      <div><button class="pill green">Schedule pickup</button></div>
+      <div class="ok" role="status" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><h4>Shop</h4><a href="products.html">All products</a><a href="products.html?view=deals">Deals</a><a href="products.html?cat=kits">Move-in kits</a><a href="products.html?view=new">New arrivals</a><a href="products.html#services">Our services</a></div>
+      <div><h4>Help</h4><a href="how-it-works.html">How it works</a><a href="how-it-works.html#times">Delivery times</a><a href="faq.html">FAQ</a><a href="faq.html#returns">Returns</a><a href="contact.html#track">Track an order</a><a href="contact.html">Contact us</a></div>
+      <div><h4>Campus</h4><a href="how-it-works.html#halls">Residence halls</a><a href="how-it-works.html#office">Office delivery</a><a href="about.html#careers">Become a runner</a></div>
+      <div><h4>About</h4><a href="about.html">About Dorm Dash</a><a href="about.html#ra">RA-approved guide</a><a href="about.html#careers">Careers</a></div>
+    </div>
+    <div class="fbase"><span>© 2026 Dorm Dash</span><span>Demo storefront. No payment is taken.</span></div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<div class="drawer-clip">
+<aside class="drawer" id="drawer" aria-label="Cart" aria-hidden="true">
+  <div class="d-head"><h2 id="dTitle">Cart</h2><button class="x" id="closeCart" aria-label="Close">×</button></div>
+  <div class="d-body" id="dBody"></div>
+  <div class="d-foot" id="dFoot"></div>
+</aside>
+</div>
+<nav class="tabbar" aria-label="Quick links"><a class="tab" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a><a class="tab" href="products.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Shop</a><a class="tab" href="faq.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg>Help</a><a class="tab" href="contact.html#track"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Orders</a><button class="tab" id="tabCart" aria-label="Open cart"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>Cart<span class="count num" id="tabCount">0</span></button></nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js?v=3"></script>
+</body>
+</html>
